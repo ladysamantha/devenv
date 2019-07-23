@@ -19,7 +19,7 @@ RUN apt-get update && \
         $(lsb_release -cs) \
         stable" && \
     apt-get update && \
-    apt-get install -y docker-ce-cli containerd.io && \
+    apt-get install -y docker-ce-cli && \
     curl https://raw.githubusercontent.com/kennethreitz/pipenv/master/get-pipenv.py | python && \
     curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash && \
     curl -o bat.deb -fsSL https://github.com/sharkdp/bat/releases/download/v0.11.0/bat_0.11.0_amd64.deb && \
